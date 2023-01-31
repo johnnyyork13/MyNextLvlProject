@@ -12,10 +12,49 @@
         <img id="logo" alt="MyNextLvl Logo" src="images/logo.jpg">
         <nav>
             <ul>
-                <li class="navButton">About Us <div class="navTriangle"></div></li>
-                <li class="navButton">Health Conditions <div class="navTriangle"></div></li>
-                <li class="navButton">Resources <div class="navTriangle"></div></li>
-                <li class="navButton">Reminders <div class="navTriangle"></div></li>
+                <li class="navButtonContainer">
+                    <div class="navButton">About Us <div class="navTriangle"></div></div>
+                    <div class="navDrop">
+                        <ul>
+                            <li>About My NextLvl</li>
+                            <li>News and Events</li>
+                            <li>How to Contribute</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="navButtonContainer">
+                    <div class="navButton">Health Conditions <div class="navTriangle"></div></div>
+                    <div class="navDrop">
+                        <ul>
+                            <li>Asthma</li>
+                            <li>Diabetes</li>
+                            <li>Seizures</li>
+                            <li>Hyperthyroidism</li>
+                            <li>Hypothyroidism</li>
+                            <li>Sickle Cell Anemia</li>
+                            <li>Cystic Fibrosis</li>
+                            <li>Gastrointestinal Disorders</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="navButtonContainer">
+                    <div class="navButton">Resources <div class="navTriangle"></div></div>
+                    <div class="navDrop">
+                        <ul>
+                            <li>Local Resources</li>
+                            <li>Outside Resources</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="navButtonContainer">
+                    <div class="navButton">Reminders <div class="navTriangle"></div></div>
+                    <div class="navDrop">
+                        <ul>
+                            <li>Doctor Appointment</li>
+                            <li>Medication Refill</li>
+                        </ul>
+                    </div>
+                </li>
             </ul>
         </nav>
         <div id="login">
@@ -23,12 +62,16 @@
             <div id="loginBtn"><p>Log In</p></div>
         </div>
     </header>
+
     <main></main>
+    
     <footer>
         <ul>
-            <li id="footerLink" class="navButton">FAQ</li>
-            <li id="footerLink" class="navButton">Contact Us</li>
+            <li class="navButton footerLink">FAQ</li>
+            <li class="navButton footerLink">Contact Us</li>
         </ul>
     </footer>
+
+    <script src="javascript.js"></script>
 </body>
 </html>
