@@ -36,7 +36,8 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
+    position: relative;
+    margin-top: 20px;
 }
 
 .formContainer input {
@@ -73,6 +74,23 @@ main {
     color: red;
 }
 
+#notification {
+    visibility: hidden;
+    left: 101%;
+    position: absolute;
+    width: 200px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#notification li {
+    color: red;
+    margin-left: -40px;
+}
+
 button {
     width: 130px;
     height: 35px;
@@ -81,6 +99,8 @@ button {
     background-color: var(--background-color);
     font-size: 1em;
     margin-bottom: 15px;
+    color: white;
+    cursor: pointer;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -98,5 +118,9 @@ button {
 
     #leftCol, #rightCol {
         width: 400px;
+    }
+
+    #notification {
+        visibility: hidden !important;
     }
 }

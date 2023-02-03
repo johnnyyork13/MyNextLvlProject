@@ -137,6 +137,16 @@
                         <input type="password" id="newPassword" placeholder="Password">
                         <input type="password" id="newPasswordConfirm" placeholder="Re-enter Password">
                         <p class="required">Required Information</p>
+
+                        <div id="notification">
+                            <h5>Passwords must match and include the following: </h5>
+                            <ul>
+                                <li id="matchChar">passwords match</li>
+                                <li id="countChar">8-16 characters</li>
+                                <li id="specialChar">a special character</li>
+                                <li id="numberChar">a number</li>
+                            </ul>
+                        </div>
                     </div>
                     <button type="button">Submit</button>
                 </div>
@@ -152,5 +162,6 @@
     </footer>
 
     <script src="javascript.js"></script>
+    <script src="login-javascript.js"></script>
 </body>
 </html>

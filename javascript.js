@@ -46,7 +46,6 @@ function mobileDropDownActivate(){
 
     for (i = 0; i < mobileHeader.length; i++) {
         let e = mobileHeader[i];
-        console.log(e.parentNode.parentNode.childNodes[3]);
         e.addEventListener('click', function(){
             cleanMobileDropDown();
             e.parentNode.childNodes[3].style.visibility = 'visible';
