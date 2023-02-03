@@ -117,38 +117,41 @@
                 <h2>Please Log In</h2>
                 <div class="colContainer">
                     <div class="formContainer">
-                        <input type="email" id="email" placeholder="Email Address">
-                        <input type="password" id="password" placeholder="Password">
-                        <div>
-                            <p class="required">Required Information</p>
-                            <p class="required">Forgot Password?</p>
-                        </div>
-                    </div>
-
-                    <button type="button">Submit</button>
+                        <form id="userForm">
+                            <input type="email" id="email" placeholder="Email Address">
+                            <input type="password" id="password" placeholder="Password">
+                            <div>
+                                <p class="required">Required Information</p>
+                                <p class="required">Forgot Password?</p>
+                            </div>
+                                </div>
+                            
+                                <button type="button">Submit</button>
+                        </form>
                 </div>
             </div>
             <div id="rightCol">
                 <h2>Create an Account</h2>
                 <div class="colContainer">
                     <div class="formContainer">
-                        <input type="text" id="name" placeholder="Full Name">
-                        <input type="email" id="newEmail" placeholder="Email Address">
-                        <input type="password" id="newPassword" placeholder="Password">
-                        <input type="password" id="newPasswordConfirm" placeholder="Re-enter Password">
-                        <p class="required">Required Information</p>
-
-                        <div id="notification">
-                            <h5>Passwords must match and include the following: </h5>
-                            <ul>
-                                <li id="matchChar">passwords match</li>
-                                <li id="countChar">8-16 characters</li>
-                                <li id="specialChar">a special character</li>
-                                <li id="numberChar">a number</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <button type="button">Submit</button>
+                        <form id="newUserForm">
+                            <input type="text" id="name" placeholder="Full Name" required>
+                            <input type="email" id="newEmail" placeholder="Email Address" required>
+                            <input type="password" id="newPassword" placeholder="Password" required>
+                            <input type="password" id="newPasswordConfirm" placeholder="Re-enter Password" required>
+                            <p class="required">Required Information</p>
+                            <div id="notification">
+                                <h5>Passwords must match and include the following: </h5>
+                                <ul>
+                                    <li id="matchChar">passwords match</li>
+                                    <li id="countChar">8-16 characters</li>
+                                    <li id="specialChar">a special character</li>
+                                    <li id="numberChar">a number</li>
+                                </ul>
+                            </div>
+                                </div>
+                                <a href="index.html"><button type="submit">Submit</button></a>
+                        </form>
                 </div>
             </div>
         </div>

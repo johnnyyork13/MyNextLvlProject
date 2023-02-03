@@ -12,12 +12,21 @@ main {
 }
 
 #leftCol, #rightCol {
+    margin: 20px;
     width: 600px;   
     height: 500px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
 }
 
 .colContainer {
@@ -36,7 +45,6 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative;
     margin-top: 20px;
 }
 
@@ -47,6 +55,10 @@ main {
     border: var(--border);
     margin: 10px;
     padding-left: 20px;
+}
+
+#rightCol .formContainer {
+    position: relative;
 }
 
 .formContainer input:focus {
@@ -120,7 +132,12 @@ button {
         width: 400px;
     }
 
+    #rightCol {
+        height: 600px;
+    }
+
     #notification {
-        visibility: hidden !important;
+        left: 50%;
+        top: 63%;
     }
 }
